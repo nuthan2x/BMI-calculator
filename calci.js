@@ -18,7 +18,7 @@ const app = express();
         res.sendFile(__dirname + "/bmical.html")
     });
 
-    app.listen(process.env.PORT ,function(){
+    app.listen(process.env.PORT || 3000,function(){
     console.log("server started.");
 });
 
