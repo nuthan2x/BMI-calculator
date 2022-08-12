@@ -11,10 +11,10 @@ const app = express();
 
 
 
-        res.send("your BMI is " + (w/h**2).toFixed(2) );
+        res.send("<h1><center>your BMI is " + (w/h**2).toFixed(2) + "</h1></center>");
     });
     
-    
+
     app.get("/",function(req,res){
         res.sendFile(__dirname + "/bmical.html")
     });
