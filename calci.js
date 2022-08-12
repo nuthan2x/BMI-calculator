@@ -4,7 +4,7 @@ const bodyparser = require('body-parser');
 const app = express();
     app.use(bodyparser.urlencoded({extended: true}));
 
-    app.post("/bmicalculator",function(req,res){
+    app.post("/",function(req,res){
 
         var w = Number(req.body.weight);
         var h = Number(req.body.height);
