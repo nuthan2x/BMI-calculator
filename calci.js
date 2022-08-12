@@ -14,6 +14,7 @@ const app = express();
         res.send("your BMI is " + (w/h**2).toFixed(2) );
     });
     
+    
     app.get("/",function(req,res){
         res.sendFile(__dirname + "/bmical.html")
     });
